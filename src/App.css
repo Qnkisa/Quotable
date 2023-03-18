@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow:#f6c90e;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    font-family: 'Spectral', serif;
+    background-color: var(--yellow);
+}
+
+.big-container{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 35px;
+}
+
+.quote-box{
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    max-width: 700px;
+    margin: auto;
+}
+
+.quote{
+    padding: 25px 0 75px;
+}
+
+.quote-box p{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.quote-box span{
+    text-align: right;
+    display: block;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.new-quote a{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    border: 1px solid white;
+    transition: all .3s;
+}
+
+.new-quote a:hover{
+    background-color: black;
+    color: white;
+}
+
+.share{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.share label{
+    font-size: 1.5rem;
+}
+
+.share a{
+    font-size: 2.5rem;
+    color: #1DA1F2;
+}
+
+h2{
+    font-size: 1.25rem;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+h2 a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h2 a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:800px) {
+    h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .quote-box{
+        padding: 1rem 2rem;
+    }
+
+    .quote{
+        padding: 20px 0;
+    }
+
+    .quote-box p{
+        font-size: 1.5rem;
+    }
+
+    .quote-box span{
+        font-size: 0.85rem;
+    }
+
+    .new-quote a{
+        font-size: 1rem;
+        padding: 7px 0;
+    }
+
+    .share{
+        gap: 5px;
+    }
+
+    .share label{
+        font-size: 1.25rem;
+    }
+
+    .share a{
+        font-size: 2rem;
+    }
+
+    h2{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+}
